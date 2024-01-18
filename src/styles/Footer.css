@@ -1,0 +1,41 @@
+
+
+  :root {
+	/* Color variables */
+	--color-A: #EC7C26; /* Replace with the actual color value for "Colour A" */
+	--color-B: #3B3C36; /* Replace with the actual color value for "Colour B" */
+  }
+  
+  .logo-container {
+	flex-shrink: 0; /* Prevent the logo from shrinking */
+  }
+  
+  .logo {
+	width: 100px; /* Adjust the size as needed */
+	height: auto;
+  }
+  
+  .nav {
+	ul {
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	  display: flex;
+	}
+  
+	li {
+	  margin-right: 20px;
+	}
+	a {
+		text-decoration: none;
+		color: var(--color-A); /* Set your desired text color using a CSS variable */
+		font-weight: bold;
+		font-size: 16px;
+	  }
+	  
+	  a:hover {
+		color: var(--color-B); /* Set your desired text color on hover using a CSS variable */
+	  }
+	
+  }
+  

@@ -1,0 +1,143 @@
+:root {
+  /* Color variables */
+  --color-A: #EC7C26; /* Replace with the actual color value for "Colour A" */
+  --color-B: #3B3C36; /* Replace with the actual color value for "Colour B" */
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'MonainnRegular';
+  src: url('../fonts/MonainnRegular-RpWKo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Queensides';
+  src: url('../fonts/Queensides-3z7Ey.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'QueensidesLight';
+  src: url('../fonts/QueensidesLight-ZVj3l.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'QueensidesMedium';
+  src: url('../fonts/QueensidesMedium-x30zV.ttf') format('truetype');
+}
+
+/* Body and Global Styles */
+body {
+  margin: 0;
+  font-family: 'QueensidesLight', sans-serif; /* Apply chosen font for paragraphs */
+  background-color: #f4f4f4;
+  color: var(--color-A);
+}
+
+/* Gallery Styles */
+.gallery-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: calc(33.33% - 20px);
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: var(--color-A); /* Add background color using Color A */
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+  background-color: var(--color-B); /* Adjust background color on hover using Color B */
+}
+
+/* Header Styles */
+header {
+  background-color: var(--color-B);
+  padding: 20px;
+  color: white;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 28px;
+  font-family: 'Queensides';
+  color: var(--color-A); /* Set text color using Color A */
+}
+
+/* Navigation Styles */
+nav {
+  font-family: 'Queensides', sans-serif;
+}
+
+.nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--color-B);
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  a:hover {
+    font-weight: 700; /* or any other numeric value for boldness */
+  }
+
+  a.active {
+    color: var(--color-B);
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  padding: 20px;
+  color: white;
+}
+
+/* Footer Links */
+.footer-link {
+  text-decoration: none;
+  color: var(--color-A);
+  font-family: 'Queensides', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: var(--color-B);
+}
+
+/* Additional CSS for non-layout styling */
+.logo-container {
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Paragraph Styles */
+p {
+  font-size: 16px; /* Set your desired font size */
+  line-height: 1.5; /* Set your desired line height */
+  margin-bottom: 10px;
+  color: black; /* Set your desired bottom margin */
+
+}
